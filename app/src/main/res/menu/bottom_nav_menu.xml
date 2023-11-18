@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/anime"
+        android:icon="@drawable/ic_anime"
+        android:title="Anime" />
+    <item
+        android:id="@+id/comic"
+        android:icon="@drawable/manga_icon"
+        android:title="Manga" />
+    <item
+        android:id="@+id/news"
+        android:icon="@drawable/baseline_newspaper_24"
+        android:title="News" />
+    <item
+        android:id="@+id/search"
+        android:icon="@drawable/ic_search"
+        app:actionViewClass="android.widget.SearchView"
+        android:title="Search" />
+</menu>

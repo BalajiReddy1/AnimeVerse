@@ -1,0 +1,20 @@
+    <resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.AnimeVerse" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <!-- Customize your light theme here. -->
+        <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
+    </style>
+
+
+        <style name="BottomNavigationTheme" parent="Theme.AnimeVerse">
+            <item name="colorPrimary">@color/yellow</item>
+            <item name="colorAccent">@color/white</item>
+            <item name="itemIconTint">@color/white</item>
+            <item name="android:textColorSecondary">@color/white</item>
+            <item name="android:colorForeground">@color/white</item>
+
+        </style>
+    <style name="Theme.AnimeVerse" parent="Base.Theme.AnimeVerse" />
+
+
+</resources>

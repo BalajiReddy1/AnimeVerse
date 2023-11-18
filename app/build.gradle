@@ -1,0 +1,80 @@
+plugins {
+    id 'com.android.application'
+    id 'com.google.gms.google-services'
+}
+
+android {
+    namespace 'com.example.animeverse'
+    compileSdk 33
+
+    defaultConfig {
+        applicationId "com.example.animeverse"
+        minSdk 24
+        targetSdk 33
+        versionCode 1
+        versionName "1.0"
+        multiDexEnabled true
+
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+}
+
+dependencies {
+
+    implementation 'androidx.appcompat:appcompat:1.6.1'
+    implementation 'com.google.android.material:material:1.6.1'
+    implementation 'androidx.constraintlayout:constraintlayout:2.1.4'
+    implementation 'com.google.firebase:firebase-auth:22.1.2'
+    implementation 'com.google.firebase:firebase-database:20.2.2'
+    implementation 'com.google.firebase:firebase-storage:20.2.1'
+    testImplementation 'junit:junit:4.13.2'
+    androidTestImplementation 'androidx.test.ext:junit:1.1.5'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.5.1'
+    implementation 'androidx.viewpager2:viewpager2:1.0.0'
+
+    //GifView
+    implementation 'pl.droidsonroids.gif:android-gif-drawable:1.2.25'
+
+    //CardView
+    implementation 'androidx.cardview:cardview:1.0.0'
+
+    implementation 'me.relex:circleindicator:2.1.6'
+
+    implementation('com.github.bumptech.glide:glide:4.15.1') {
+        transitive = true
+    }
+    annotationProcessor 'com.github.bumptech.glide:compiler:4.15.0'
+
+    implementation 'androidx.multidex:multidex:2.0.1'
+
+    implementation 'io.github.glailton.expandabletextview:expandabletextview:1.0.3'
+
+    implementation 'com.android.volley:volley:1.2.1'
+
+    implementation 'com.github.denzcoskun:ImageSlideshow:0.1.2'
+    implementation 'com.github.smarteist:autoimageslider:1.4.0'
+
+    implementation 'com.google.android.exoplayer:exoplayer:2.11.7'
+
+    implementation 'com.github.barteksc:android-pdf-viewer:3.2.0-beta.1'
+
+    implementation 'com.firebaseui:firebase-ui-database:6.3.0'
+
+    implementation 'com.github.TutorialsAndroid:GButton:v1.0.19'
+    implementation 'com.google.android.gms:play-services-auth:20.7.0'
+
+    implementation 'com.theartofdev.edmodo:android-image-cropper:2.8.+'
+
+    implementation 'de.hdodenhof:circleimageview:3.1.0'
+}

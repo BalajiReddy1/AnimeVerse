@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".IntroUI.SignIn"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/loginbg2">
+
+<androidx.core.widget.NestedScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.cardview.widget.CardView
+        android:layout_margin="10dp"
+        android:layout_width="match_parent"
+        android:layout_gravity="center_vertical"
+        app:cardBackgroundColor="#212121"
+        app:cardElevation="50dp"
+        app:cardCornerRadius="20dp"
+        android:layout_height="match_parent"
+        >
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="420dp">
+            <TextView
+                android:id="@+id/logintext"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="40dp"
+                android:alpha="1"
+                android:text="Login"
+                android:textColor="@color/white"
+                android:textSize="30dp" />
+
+            <EditText
+                android:id="@+id/email_login"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="110dp"
+                android:layout_marginEnd="20dp"
+                android:alpha="0.9"
+                android:background="@drawable/back_black"
+                android:hint="Enter your email address"
+                android:inputType="textEmailAddress"
+                android:maxLines="1"
+                android:textStyle="bold"
+                android:padding="15dp"
+                android:textColor="@color/white"
+                android:textColorHint="#B1AEAE"
+                android:textSize="18dp" />
+
+
+            <EditText
+                android:id="@+id/password_login"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/email_login"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="20dp"
+                android:alpha="0.9"
+                android:background="@drawable/back_black"
+                android:hint="Enter your password"
+                android:inputType="textPassword"
+                android:maxLines="1"
+                android:textStyle="bold"
+                android:padding="15dp"
+                android:textColor="@color/white"
+                android:textColorHint="#B1AEAE"
+                android:textSize="18dp" />
+
+            <Button
+                android:id="@+id/login_btn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/password_login"
+                android:layout_centerHorizontal="true"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="50dp"
+                android:layout_marginEnd="20dp"
+                android:background="@drawable/button2"
+                android:text="Login "
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                android:textSize="18dp" />
+
+            <TextView
+                android:id="@+id/signup"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/login_btn"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="40dp"
+                android:alpha="1"
+                android:text="Didn't have a account? Sign up"
+                android:textColor="@color/white"
+                android:textSize="18dp" />
+        </RelativeLayout>
+
+
+
+    </androidx.cardview.widget.CardView>
+
+</androidx.core.widget.NestedScrollView>
+</RelativeLayout>

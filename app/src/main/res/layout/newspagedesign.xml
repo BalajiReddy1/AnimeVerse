@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="10dp"
+    android:elevation="10dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+<androidx.cardview.widget.CardView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:background="@drawable/news_bg"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:layout_marginLeft="2dp"
+            android:layout_marginRight="2dp"
+            android:scaleType="centerCrop"
+            android:layout_marginTop="2dp"
+            android:id="@+id/newsimage"
+            android:layout_width="match_parent"
+            android:layout_height="240dp"
+            android:src="@drawable/logo"
+            tools:ignore="MissingConstraints" />
+
+        <TextView
+            android:id="@+id/header"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="This is course name"
+            android:textColor="@color/white"
+            android:paddingLeft="10sp"
+            android:textSize="18sp"
+            android:layout_below="@id/newsimage"
+            />
+
+        <TextView
+            android:id="@+id/newslink"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Visit Source"
+            android:textColor="@color/yellow"
+            android:paddingLeft="10sp"
+            android:textSize="16sp"
+            android:layout_below="@id/header"
+            />
+
+    </RelativeLayout>
+
+
+
+</androidx.cardview.widget.CardView>
+
+
+
+</androidx.cardview.widget.CardView>
