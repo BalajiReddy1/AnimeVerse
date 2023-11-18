@@ -16,4 +16,9 @@ The AnimeVerse app is a feature-rich platform designed for Android Studio that c
     Android Studio 
     Language: Java, XML
     Database: Firebase Realtime Database
-    
+
+# Screenshots
+
+
+
+
